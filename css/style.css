@@ -57,7 +57,7 @@ body {
   }
   /* max width on the image in pixels */
   nav .logo img {
-    max-width: 120px;
+    max-width: 150px;
   }
   /* flex basis on the image container, li */
   nav .logo {
