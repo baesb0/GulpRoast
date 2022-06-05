@@ -40,6 +40,8 @@ body {
   }
   /* navbar styling */
   nav ul {
+    border: 2px solid red;
+    padding: .5em;
     padding: 0;
     margin: 0;
     list-style-type: none;
@@ -47,7 +49,7 @@ body {
     flex-flow: row wrap;
     justify-content: center;
   }
-  nav li {
+  nav li {    
     margin: 0 1rem 1rem 1rem;
     font-size: 1.3rem;
   }
@@ -61,6 +63,8 @@ body {
     text-align: center;
   }
   nav a {
+    border: 2px solid red;
+    padding: .5em;
     color: white;
     text-decoration: none;
     display: block;
@@ -75,23 +79,28 @@ body {
   }
   /* sits inside of the white background, centered */
   .main {
-    max-width: 1200px;
+    /* border: 2px solid red; */
+    padding: .5em;
+    max-width: 500px;
     margin: 0 auto;
     padding: 2rem;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column;
     justify-content: space-between;
   }
   article {
+    /* border: 2px solid red; */
     flex-basis: 73%;
   }
   figure {
+    /* border: 2px solid red; */
     margin: 3rem 0 0 0;
     flex-basis: 25%;
     background-color: #59331d;
     border-radius: 10px;
   }
   figure img {
+    /* border: 2px solid red; */
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
   }
@@ -113,7 +122,10 @@ body {
     background-color: #f2f2f2;
     color: #59331d;
   }
+
   footer {
+    border: 2px solid red;
+    padding: .5em;
     color: #f2f2f2;
     text-align: center;
     border-top: 10px solid #d98555;
@@ -127,8 +139,55 @@ body {
     justify-content: center;
   }
   footer a {
+    border: 2px solid red;
+    padding: .5em;
     color: #f2f2f2;
     font-size: 1rem;
     display: block;
     margin: 0 1rem 3rem 1rem;
+  }
+
+  @media (min-width:768px){
+    .main {
+      padding: .5em;
+      margin: 0 auto;
+      max-width: 1296px;
+      padding: 2rem;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    article {
+      /* border: 2px solid red; */
+      flex-basis: 58%;
+    }
+    figure {
+      /* border: 2px solid red; */
+      margin: 3rem 0 0 0;
+      flex-basis: 40%;
+      background-color: #59331d;
+      border-radius: 10px;
+    }
+  }
+  @media (min-width:992px){
+    .main {
+      padding: .5em;
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 2rem;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    article {
+      /* border: 2px solid red; */
+      flex-basis: 73%;
+    }
+    figure {
+      /* border: 2px solid red; */
+      margin: 3rem 0 0 0;
+      flex-basis: 25%;
+      background-color: #59331d;
+      border-radius: 10px;
+    }
   }
