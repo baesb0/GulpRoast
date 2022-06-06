@@ -197,8 +197,8 @@ body {
     }
   }
 
-  /* products main-about css start here */
-  h1{
+  /* products main css start here */
+  .main-title{
     padding: .5em;
     margin: 0 auto;
     display: flex;
@@ -223,10 +223,13 @@ body {
     border: 2px solid red;
   } */
   @media (min-width:768px){  
-    h1{
+    .main-title{
       padding: .5em;
+      padding:1rem 0 0 2rem ;
       margin: 0 auto;
+      display: flex;
       max-width: 992px;
+      justify-content:space-between;
     }
     .main-about {
       /* border: 2px solid red; */
@@ -271,10 +274,13 @@ body {
     }
   }
   @media (min-width:992px){
-    h1{
+    .main-title{
       padding: .5em;
+      padding:1rem 0 0 2rem ;
       margin: 0 auto;
+      display: flex;
       max-width: 1920px;
+      justify-content:space-between;
     }
     .main-about {
       /* border: 2px solid red; */
@@ -317,4 +323,33 @@ body {
       grid-column:3;
       grid-row:2;
     }
+  }
+/* contact us main css start here */
+  .main-contact {
+    /* border: 2px solid red; */
+    padding: .5em;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .address{
+    /* border: 2px solid red; */
+    flex-basis: 48%;
+  }
+  .menu{
+    /* border: 2px solid red; */
+    flex-basis: 50%;
+  }
+  @media (min-width:768px){  
+    .main-contact {
+      /* border: 2px solid red; */
+      padding: .5em;
+      margin: 0 auto;
+      padding: 2rem;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+    } 
   }
