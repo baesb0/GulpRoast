@@ -2,3 +2,15 @@
     padding: $padding;
     margin: $margin;
   }
+
+  @mixin display-grid ($column, $row, $column-gap, $row-gap){
+    grid-template-columns: $column;
+    grid-template-rows: $row;
+    column-gap: $column-gap;
+    row-gap: $row-gap;
+  }
+
+  @mixin item-placement ($grid-column, $grid-row) {
+    grid-column: $grid-column;
+    grid-row: $grid-row;
+  }

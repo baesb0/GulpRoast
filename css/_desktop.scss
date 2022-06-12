@@ -15,7 +15,6 @@
       }
       }
     } 
-  
     .main {
       @include space ($main-padding,0 auto);
       max-width: 1920px;
@@ -33,51 +32,34 @@
       max-width: 1920px;
       justify-content: space-between;
     }
-  
     .main-about {
       /* border: 2px solid red; */
       max-width: 1920px;
       @include space ($main-padding,0 auto);
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      column-gap: 1rem;
-      row-gap: .5rem;
+      @include display-grid (repeat(3, 1fr), repeat(2, 1fr), 1rem, .5rem);
       justify-content: space-between;
     }
-  
     img {
       border-radius: 10px;
       margin:0;
     }
-  
     .espressoimg {
-      grid-column: 1;
-      grid-row: 1;
+      @include item-placement (1, 1);
     }
-  
     .espresso {
-      grid-column: 1;
-      grid-row: 2;
+      @include item-placement (1, 2);
     }
-  
     .coffeebeansimg {
-      grid-column: 2;
-      grid-row: 2;
+      @include item-placement (2, 2);
     }
-  
     .coffeebeans {
-      grid-column: 2;
-      grid-row: 1;
+      @include item-placement (2, 1);
     }
-  
     .pouringimg {
-      grid-column: 3;
-      grid-row: 1;
+      @include item-placement (3, 1);
     }
-  
     .pouring {
-      grid-column: 3;
-      grid-row: 2;
+      @include item-placement (3, 2);
     }
   }
