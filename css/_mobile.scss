@@ -1,0 +1,190 @@
+
+// about or index
+body {
+    @include space (0,0);
+    background-color: $primary-color;
+    font-family: $main-font;
+    line-height: 2;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: $header-font;
+  }
+  
+  h1 {
+    font-size: $main-font-size;
+    margin: 0;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+
+  
+  a {
+    color: $secondary-color;
+  
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  
+  header {
+    border-bottom: 10px solid $accent-color;
+  }
+  
+  /* navbar styling */
+  nav { 
+    ul {
+      @include space ($nav-footer-padding, 0);
+      list-style-type: none;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-around;
+      text-align: center;
+  
+    li {
+      /* border: 2px solid red; */
+      margin: 0 1rem 1rem 1rem;
+      font-size: 1.3rem;
+    }
+    }
+  }
+  
+  nav .logo {
+    flex-basis: 100%;
+    margin:0;
+  
+    img {
+      max-width: 150px;
+    }
+  }
+  
+  nav a {
+    /* border: 2px solid red; */
+    padding: $nav-footer-padding;
+    color: $white-color;
+    text-decoration: none;
+    display: block;
+  
+    &:hover {
+      color: $accent-color;
+    }
+  }
+  
+  /* sits inside of the white background, centered */
+  .main {
+    /* border: 2px solid red; */
+    max-width: 279px;
+    @include space ($main-padding,0 auto);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  /* establishes a white background */
+    &-bkgd {
+      background: $white-color url(../media/images/gulp-bottom-beans.jpg) repeat-x bottom;
+      padding-bottom: 300px;
+    }
+  }
+  
+  article {
+    /* border: 2px solid red; */
+    flex-basis: 73%;
+  }
+  
+  figure {
+    /* border: 2px solid red; */
+    margin: 3rem 0 0 0;
+    flex-basis: 25%;
+    background-color: $secondary-color;
+    border-radius: 10px;
+    img {
+      /* border: 2px solid red; */
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+
+  .pouring-about {
+    margin: 0;
+  }
+  figcaption {
+    color: $alt-white-color;
+    padding: $fig-caption-padding;
+  }
+  .button {
+    @include space ($button-padding, 0);
+    display: inline-block;
+    background-color: $secondary-color;
+    border-radius: 10px;
+    color: $alt-white-color;
+    text-decoration: none;
+    border: 3px solid $secondary-color;
+  
+    &:hover {
+      background-color: $alt-white-color;
+      color: $secondary-color;
+    }
+  }
+  
+  footer {
+    /* border: 2px solid red; */
+    padding: $nav-footer-padding;
+    color: $alt-white-color;
+    text-align: center;
+    border-top: 10px solid $accent-color;
+    ul {
+      @include space (0, 0);
+      list-style-type: none;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+    a {
+      /* border: 2px solid red; */
+      @include space ($nav-footer-padding, $footer-margin);
+      color: $alt-white-color;
+      font-size: $main-font-size;
+      display: block;
+    }
+    }
+  }
+
+// product
+.main-title {
+    @include space ($nav-footer-padding,0 auto);
+    display: flex;
+    max-width: 279px;
+    justify-content: space-between;
+  }
+  .main-about {
+    /* border: 2px solid red; */
+    max-width: 279px;
+    @include space ($main-padding,0 auto);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  img {
+    /* border: 2px solid red; */
+    border-radius: 10px;
+  }
+
+// contact
+.main-contact {
+    /* border: 2px solid red; */
+    @include space ($main-padding,0 auto);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .address {
+    /* border: 2px solid red; */
+    flex-basis: 48%;
+  }
+  .menu {
+    /* border: 2px solid red; */
+    flex-basis: 50%;
+  }
